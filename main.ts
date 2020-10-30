@@ -259,5 +259,18 @@ let sideOrientation = sprites.create(img`
 tiles.placeOnTile(sideOrientation, tiles.getTileLocation(10, 9))
 resetBox()
 forever(function () {
-	
+    if (box.overlapsWith(pinkButton)) {
+        if (objectMaterial == "Rubber") {
+            game.splash(objectMaterial)
+            pause2 = true
+            pause(1300)
+            box.setVelocity(0, 50)
+        } else {
+            if (true) {
+            	
+            } else {
+            	
+            }
+        }
+    }
 })
